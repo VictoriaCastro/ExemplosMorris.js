@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset=utf-8 />
+
+		<title>Gráfico de Barras Morris</title>
+	
+	</head>
+	
+	<body>
+  	
+  		<div id="barras"></div>
+	
+	</body>
+
+	<link rel="stylesheet" href="morris/morris.css">
+	<script src="jquery/jquery.min.js"></script>
+	<script src="raphael/raphael-min.js"></script>
+	<script src="morris/morris.min.js"></script>
+
+	<script type="text/javascript">
+
+		Morris.Bar({
+			element: 'barras',
+  			data: [
+    			{ y: '2008', a: 80, b: 70 },
+    			{ y: '2009', a: 60,  b: 55 },
+    			{ y: '2010', a: 60,  b: 50 },
+    			{ y: '2011', a: 65,  b: 75 },
+    			{ y: '2012', a: 70,  b: 50 },
+    			{ y: '2013', a: 85,  b: 95 },
+    			{ y: '2014', a: 80, b: 70 }
+  			],
+  			
+  			xkey: 'y',
+ 			ykeys: ['a', 'b'],
+  			labels: ['Médias A', 'Médias B'],
+  			resize: true
+		});
+
+
+	</script>
+
+</html>
